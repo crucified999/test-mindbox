@@ -13,12 +13,23 @@ export const TodoInput: React.FC<TodoInputProps> = ({ onAdd }) => {
     }
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (text.trim()) {
+        onAdd(text.trim());
+        setText("");
+      }
+    }
+  };
+
   return (
     <form onSubmit={handleSubmit} className={styles.todoInput}>
       <input
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
+        onKeyDown={handleKeyDown}
         placeholder="Введите новую задачу..."
         className={styles.todoInputField}
       />
