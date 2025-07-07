@@ -91,4 +91,3 @@ src/
 3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
 4. Отправьте в ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
-
