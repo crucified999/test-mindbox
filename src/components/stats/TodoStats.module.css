@@ -1,0 +1,53 @@
+.todoStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.statsInfo {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.statItem {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.statItem strong {
+  color: #495057;
+  font-weight: 600;
+}
+
+.clearCompletedBtn {
+  padding: 8px 16px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clearCompletedBtn:hover {
+  background: #c82333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .todoStats {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .statsInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+.todoList {
+  margin-bottom: 2rem;
+}
+
+.todoList h3 {
+  margin: 0 0 1rem 0;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.todoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
