@@ -41,7 +41,7 @@ npm install
 3. Запустите проект в режиме разработки:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 4. Откройте [http://localhost:5173](http://localhost:5173) в браузере
