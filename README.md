@@ -1,54 +1,94 @@
-# React + TypeScript + Vite
+# ToDo Приложение на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное ToDo-приложение, созданное с использованием React, TypeScript и CSS модулей.
 
-Currently, two official plugins are available:
+## 🚀 Функциональность
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Добавление новых задач
+- ✅ Отметка задач как выполненных
+- ✅ Удаление задач
+- ✅ Фильтрация задач (Все, Активные, Выполненные)
+- ✅ Статистика задач
+- ✅ Очистка выполненных задач
+- ✅ Сохранение в localStorage
+- ✅ Адаптивный дизайн
 
-## Expanding the ESLint configuration
+## 🛠 Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19** - библиотека для создания пользовательских интерфейсов
+- **TypeScript** - типизированный JavaScript
+- **CSS Modules** - изолированные стили компонентов
+- **Vite** - быстрый сборщик проекта
+- **ESLint** - линтер для качества кода
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Установка и запуск
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/your-username/todo-app-react.git
+cd todo-app-react
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Установите зависимости:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Запустите проект в режиме разработки:
+
+```bash
+npm run start
+```
+
+4. Откройте [http://localhost:5173](http://localhost:5173) в браузере
+
+## 🏗 Сборка для продакшена
+
+```bash
+npm run build
+```
+
+## 📁 Структура проекта
+
+```
+src/
+├── components/
+│   ├── app/           # Основной компонент приложения
+│   ├── input/         # Компонент ввода задач
+│   ├── item/          # Компонент отдельной задачи
+│   ├── list/          # Компонент списка задач
+│   └── stats/         # Компонент статистики
+├── types/             # TypeScript типы
+└── main.tsx          # Точка входа
+```
+
+## 🎨 Особенности дизайна
+
+- Современный UI с градиентами и тенями
+- Плавные анимации и переходы
+- Hover-эффекты для интерактивных элементов
+- Адаптивная верстка для мобильных устройств
+- Изолированные стили через CSS модули
+
+## 📱 Адаптивность
+
+Приложение полностью адаптировано для:
+
+- Десктопных устройств
+- Планшетов
+- Мобильных телефонов
+
+## 💾 Сохранение данных
+
+Все задачи автоматически сохраняются в localStorage браузера и восстанавливаются при перезагрузке страницы.
+
+## 🤝 Вклад в проект
+
+1. Форкните репозиторий
+2. Создайте ветку для новой функции (`git checkout -b feature/amazing-feature`)
+3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
+4. Отправьте в ветку (`git push origin feature/amazing-feature`)
+5. Откройте Pull Request
+
